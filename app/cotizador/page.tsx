@@ -65,9 +65,9 @@ export default function CotizadorPage() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-[-0.03em] leading-[1.1] pb-4 pr-6 overflow-visible">
-           COTIZADOR{" "}
+           CONFIGURÁ{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-           CLOUD
+           TU PLAN
           </span>
           </h1>
 
@@ -92,7 +92,7 @@ export default function CotizadorPage() {
                 </h2>
 
                 <p className="text-slate-400 mt-1 text-lg">
-                  Personalizá tu cotización
+                  Personalizá tu plan
                 </p>
               </div>
             </div>
@@ -263,10 +263,45 @@ export default function CotizadorPage() {
                 <div className="text-5xl md:text-6xl font-extrabold tracking-[-0.05em] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                   USD {result.total.toFixed(2)}
                 </div>
+				<a
+  href={`https://wa.me/5491140846563?text=${encodeURIComponent(
+    `Hola! Quiero solicitar CCTV CLOUD.
+
+• Plan: Cloud ${plan}
+• Cámaras: ${cameras}
+• Precio por cámara: USD ${result.pricePerCamera}
+• Descuento: ${(result.discount * 100).toFixed(0)}%
+• VPN: ${vpn ? "Sí" : "No"}
+${vpn ? ` VPN única vez: USD 100` : ""}
+
+TOTAL: USD ${result.total.toFixed(2)}`
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-10 w-full flex justify-center items-center bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl py-5 text-xl font-semibold hover:scale-[1.02] transition-all"
+>
+  Solicitar ahora
+</a>      {/* WHATSAPP */}
+    
               </div>
 
           </div>
+		  
           </div>
+		    <a
+  href="https://wa.me/5491111111111?text=Hola!%20Quiero%20evaluar%20mi%20instalación%20para%20CCTV%20CLOUD."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-4 right-4 md:bottom-6 md:right-8 z-50 w-20 h-20 rounded-full bg-[#25D366] flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    className="w-12 h-12 fill-white"
+  >
+    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.45 0 .06 5.39.06 12c0 2.11.55 4.17 1.6 5.99L0 24l6.19-1.62A11.94 11.94 0 0 0 12.06 24h.01c6.61 0 12-5.39 12-12 0-3.2-1.25-6.2-3.55-8.52ZM12.07 21.8h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.67.96.98-3.58-.24-.37A9.8 9.8 0 0 1 2.26 12c0-5.41 4.4-9.81 9.81-9.81 2.62 0 5.08 1.02 6.93 2.88A9.73 9.73 0 0 1 21.87 12c0 5.41-4.4 9.8-9.8 9.8Zm5.38-7.35c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.15-.17.19-.34.22-.63.07-.29-.15-1.2-.44-2.29-1.41-.84-.75-1.41-1.68-1.58-1.97-.17-.29-.02-.44.13-.58.13-.13.29-.34.43-.51.14-.17.19-.29.29-.49.1-.19.05-.37-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.55-.47-.48-.65-.49h-.55c-.19 0-.49.07-.75.34-.26.29-.98.96-.98 2.34s1 2.71 1.14 2.9c.14.19 1.96 3 4.75 4.2.66.28 1.17.45 1.57.57.66.21 1.26.18 1.73.11.53-.08 1.72-.7 1.96-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.19-.56-.34Z"/>
+  </svg>
+</a>
         </section>
       </div>
     </div>

@@ -95,7 +95,7 @@ export default function CCTVCloudLanding() {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center gap-8 text-sm text-slate-300">
+          <div className="hidden lg:flex items-center gap-8 text-sm text-slate-300 relative left-45">
             <a href="#compatibilidad">Compatibilidad</a>
             <a href="#planes">Planes</a>
             <a href="#faq">FAQ</a>
@@ -132,7 +132,7 @@ export default function CCTVCloudLanding() {
 
             <p className="text-slate-300 text-xl leading-relaxed mt-10 max-w-2xl">
               Tus grabaciones se respaldan automáticamente en la nube para que
-              sigan disponibles aunque roben, dañen o falle el DVR/NVR.
+              sigan disponibles aunque roben, dañen o falle el almacenamiento de tu DVR/NVR.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 mt-12">
@@ -244,6 +244,7 @@ export default function CCTVCloudLanding() {
                   "Sin modificar tu instalación actual",
                   "Configuración simple",
                   "Respaldo automático",
+				  "Infraestructura segura con conexiones VPN cifradas (Opcional)"
                 ].map((item) => (
                   <div
                     key={item}
@@ -255,15 +256,7 @@ export default function CCTVCloudLanding() {
                 ))}
               </div>
 
-              <div className="mt-12 rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-                <div className="flex items-center gap-4">
-                  <ShieldCheck className="text-blue-400" />
-
-                  <div>
-                    Infraestructura segura con conexiones VPN cifradas.
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             <div className="rounded-[40px] border border-white/10 bg-white/[0.03] p-12">
