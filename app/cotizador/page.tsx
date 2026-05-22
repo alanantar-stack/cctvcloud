@@ -11,7 +11,7 @@ import {
 
 export default function CotizadorPage() {
   const [plan, setPlan] = useState("7");
-  const [cameras, setCameras] = useState(4);
+  const [cameras, setCameras] = useState(1);
   const [vpn, setVpn] = useState(false);
 
   const prices: Record<string, number> = {
@@ -56,13 +56,10 @@ export default function CotizadorPage() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-blue-500/10 blur-[160px] rounded-full" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[120px] rounded-full" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-14">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 py-14">
         {/* HERO */}
         <section className="text-center mb-24">
-          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300 text-sm mb-8 backdrop-blur-xl">
-            <Calculator className="w-4 h-4" />
-            Plataforma Cloud para Videovigilancia
-          </div>
+        
 
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-[-0.03em] leading-[1.1] pb-4 pr-6 overflow-visible">
            CONFIGURÁ{" "}
@@ -78,9 +75,9 @@ export default function CotizadorPage() {
         </section>
 
         {/* CONTENT */}
-        <section className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-start">
+        <section className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
           {/* CONFIG */}
-          <div className="rounded-[32px] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-8 md:p-10">
+          <div className="h-full rounded-[32px] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-8 md:p-10">
             <div className="flex items-center gap-4 mb-10">
               <div className="w-16 h-16 rounded-3xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
                 <Cloud className="w-8 h-8 text-blue-400" />
@@ -142,7 +139,7 @@ export default function CotizadorPage() {
               </div>
 
               {/* VPN */}
-              <div className="rounded-[28px] border border-blue-500/20 bg-blue-500/[0.05] p-6">
+              <div className="mt-22 rounded-[28px] border border-blue-500/20 bg-blue-500/[0.05] p-6">
                 <label className="flex items-start justify-between gap-5 cursor-pointer">
                   <div className="flex gap-4">
                     <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
@@ -176,7 +173,7 @@ export default function CotizadorPage() {
           </div>
 
           {/* RESULT */}
-          <div className="rounded-[32px] border border-blue-500/20 bg-gradient-to-b from-blue-500/[0.08] to-transparent backdrop-blur-2xl p-8 md:p-10">
+          <div className="h-full rounded-[32px] border border-blue-500/20 bg-gradient-to-b from-blue-500/[0.08] to-transparent backdrop-blur-2xl p-8 md:p-10">
             <div className="flex items-center gap-4 mb-10">
               <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
                 <Calculator className="w-7 h-7 text-blue-400" />
@@ -289,7 +286,7 @@ TOTAL: USD ${result.total.toFixed(2)}`
 		  
           </div>
 		    <a
-  href="https://wa.me/5491111111111?text=Hola!%20Quiero%20evaluar%20mi%20instalación%20para%20CCTV%20CLOUD."
+  href="https://wa.me/5491140846563?text=Hola!%20Quiero%20evaluar%20mi%20instalación%20para%20CCTV%20CLOUD."
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-4 right-4 md:bottom-6 md:right-8 z-50 w-20 h-20 rounded-full bg-[#25D366] flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300"

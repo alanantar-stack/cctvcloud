@@ -102,12 +102,24 @@ export default function CCTVCloudLanding() {
             <a href="#instaladores">Instaladores</a>
           </div>
 
-          <Link
-            href="/cotizador"
-            className="bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition-all"
-          >
-            Evaluar mi instalación
-          </Link>
+          <a
+  href="/cotizador"
+  className="
+    bg-gradient-to-r from-blue-600 to-cyan-500
+    hover:opacity-90
+    transition-all duration-300
+    text-white font-semibold
+    rounded-2xl
+
+    px-4 py-3 text-sm
+    md:px-6 md:py-3 md:text-base
+
+    whitespace-nowrap
+    shadow-xl
+  "
+>
+  Evaluar mi instalación
+</a>
         </div>
       </header>
 
@@ -115,12 +127,7 @@ export default function CCTVCloudLanding() {
         {/* HERO */}
         <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-20 items-center">
           <div>
-            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300 text-sm mb-10">
-              <Cloud className="w-4 h-4" />
-              Plataforma Cloud para Videovigilancia
-            </div>
-
-            <h1 className="text-6xl md:text-8xl font-extrabold tracking-[-0.05em] leading-none py-4 overflow-visible">
+                  <h1 className="text-6xl md:text-8xl font-extrabold tracking-[-0.05em] leading-none py-4 overflow-visible">
   <span className="block">
     PROTEGÉ TU
   </span>
@@ -250,7 +257,7 @@ export default function CCTVCloudLanding() {
                     key={item}
                     className="flex items-center gap-4"
                   >
-                    <CheckCircle2 className="text-blue-400" />
+                    <CheckCircle2 className="min-w-8 min-h-8 text-blue-400 shrink-0" />
                     <span className="text-lg">{item}</span>
                   </div>
                 ))}
@@ -316,7 +323,7 @@ export default function CCTVCloudLanding() {
                       key={item}
                       className="flex items-center gap-5 text-2xl"
                     >
-                      <CircleAlert className="text-red-500 w-8 h-8" />
+                      <CircleAlert className="min-w-8 min-h-8 text-red-400 shrink-0" />
                       {item}
                     </div>
                   ))}
@@ -340,7 +347,7 @@ export default function CCTVCloudLanding() {
                       key={item}
                       className="flex items-center gap-5 text-2xl"
                     >
-                      <CheckCircle2 className="text-green-500 w-8 h-8" />
+                      <CheckCircle2 className="min-w-8 min-h-8 text-green-400 shrink-0" />
                       {item}
                     </div>
                   ))}
@@ -363,26 +370,31 @@ export default function CCTVCloudLanding() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
-            {[
-              "Experiencia en videovigilancia profesional",
-              "Tecnología Dahua para máxima confiabilidad",
-              "Respaldo automático de grabaciones",
-              "Infraestructura segura con conexiones VPN cifradas",
-              "Compatible con instalaciones existentes",
-              "Escalable según cantidad de cámaras",
-              "Soporte técnico especializado",
-              "Soluciones para comercios, empresas y proyectos corporativos",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-3xl border border-white/10 bg-white/[0.03] p-8"
-              >
-                <CheckCircle2 className="text-blue-400 mb-5" />
-                <div className="text-lg leading-relaxed">{item}</div>
-              </div>
-            ))}
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 max-w-6xl mx-auto">
+  {[
+    "Experiencia en videovigilancia profesional",
+    "Tecnología Dahua para máxima confiabilidad",
+    "Respaldo automático de grabaciones",
+    "Infraestructura segura con conexiones VPN cifradas",
+    "Compatible con instalaciones existentes",
+    "Escalable según cantidad de cámaras",
+    "Soporte técnico especializado",
+    "Soluciones para comercios, empresas y proyectos corporativos",
+  ].map((item) => (
+    <div
+      key={item}
+      className="w-full rounded-3xl border border-white/10 bg-white/[0.03] p-5 min-h-[140px] flex items-center"
+    >
+      <div className="flex items-center gap-4">
+        <CheckCircle2 className="min-w-8 min-h-8 text-blue-400 shrink-0" />
+
+        <div className="text-base md:text-lg leading-relaxed text-white">
+          {item}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 
           <p className="text-center text-slate-300 text-xl mt-16 max-w-5xl mx-auto">
             No somos solo almacenamiento cloud. Somos una solución diseñada
@@ -565,7 +577,7 @@ export default function CCTVCloudLanding() {
                   key={item}
                   className="flex items-center gap-4"
                 >
-                  <CheckCircle2 className="text-blue-400" />
+                  <CheckCircle2 className="min-w-8 min-h-8 text-blue-400 shrink-0" />
                   {item}
                 </div>
               ))}
@@ -577,7 +589,7 @@ export default function CCTVCloudLanding() {
             </p>
 
            <a
-  href="https://wa.me/5491111111111?text=Quiero%20hablar%20con%20un%20asesor%20CCTV%20Cloud"
+  href="https://wa.me/5491140846563?text=Quiero%20hablar%20con%20un%20asesor%20CCTV%20Cloud"
   target="_blank"
   rel="noopener noreferrer"
   className="mt-10 w-full flex justify-center items-center bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl py-5 text-lg font-semibold hover:scale-[1.02] transition-all"
@@ -590,7 +602,7 @@ export default function CCTVCloudLanding() {
 
       {/* WHATSAPP */}
       <a
-  href="https://wa.me/5491111111111?text=Hola!%20Quiero%20evaluar%20mi%20instalación%20para%20CCTV%20CLOUD."
+  href="https://wa.me/5491140846563?text=Hola!%20Quiero%20evaluar%20mi%20instalación%20para%20CCTV%20CLOUD."
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-6 right-6 z-50 w-20 h-20 rounded-full bg-[#25D366] flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300"
