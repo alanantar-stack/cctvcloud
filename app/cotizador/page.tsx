@@ -85,12 +85,10 @@ export default function CotizadorPage() {
 
               <div>
                 <h2 className="text-3xl font-bold tracking-tight">
-                  Configuración
+                  Seleccioná tu plan
                 </h2>
 
-                <p className="text-slate-400 mt-1 text-lg">
-                  Personalizá tu plan
-                </p>
+          
               </div>
             </div>
 
