@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import {
   Cloud,
@@ -85,14 +85,13 @@ export default function CCTVCloudLanding() {
       <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-white/5 bg-[#050816]/80">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Cloud className="w-8 h-8 text-blue-400" />
-
-            <div className="text-2xl font-extrabold tracking-tight">
-              CCTV{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                CLOUD
-              </span>
-            </div>
+            <Image
+				src="/Logo 3.png"
+				alt="CCTV Cloud"
+				width={220}
+				height={100}
+				className="h-24	w-auto object-contain"
+			/>
           </div>
 
           <div className="hidden lg:flex items-center gap-8 text-sm text-slate-300 relative left-45">
@@ -127,7 +126,7 @@ export default function CCTVCloudLanding() {
         {/* HERO */}
         <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-20 items-center">
           <div>
-                  <h1 className="text-6xl md:text-8xl font-extrabold tracking-[-0.05em] leading-none py-4 overflow-visible">
+                  <h1 className="text-6xl md:text-7xl font-extrabold tracking-[-0.05em] leading-none py-4 overflow-visible">
   <span className="block">
     PROTEGÉ TU
   </span>
